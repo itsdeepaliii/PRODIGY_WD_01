@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOIR TINTS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #0e0e0e;
+        color: #fff;
+      }
+
+      /* Navbar */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background: transparent;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        z-index: 1000;
+      }
+
+      .navbar.scrolled {
+        background-color: #1a1a1a;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #f2c4c4;
+        letter-spacing: 2px;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+      }
+
+      .navbar ul li {
+        margin-left: 30px;
+      }
+
+      .navbar ul li a {
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 17px;
+        transition: color 0.3s, border-bottom 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        color: #f08d8d;
+        border-bottom: 2px solid #f08d8d;
+      }
+
+      /* Hero Section with background image */
+      .hero {
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("1920×1080.png") no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      .hero-content {
+        color: #f2c4c4;
+        max-width: 600px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #e0e0e0;
+      }
+
+      section {
+        padding: 100px 50px;
+      }
+
+      section h2 {
+        font-size: 36px;
+        color: #f2c4c4;
+        margin-bottom: 20px;
+      }
+
+      section p {
+        font-size: 16px;
+        color: #dcdcdc;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          padding: 15px 20px;
+        }
+
+        .navbar ul {
+          flex-direction: column;
+          align-items: center;
+          margin-top: 10px;
+        }
+
+        .navbar ul li {
+          margin: 10px 0;
+        }
+
+        .hero h1 {
+          font-size: 36px;
+        }
+
+        .hero p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="logo">NOIR TINTS</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Bold. Natural. You.</h1>
+        <p>
+          Explore the magic of nature’s tint — handcrafted for the dark feminine
+          in you. Cruelty-free. Long-lasting. Simply irresistible.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        NOIR TINTS is a soulful blend of beauty and nature. Each lip and cheek
+        tint is made with care using botanical ingredients that enhance your
+        natural allure while nourishing your skin.At NOIR TINTS, we believe
+        beauty should be simple, fun, and kind to your skin. Born out of a love
+        for clean ingredients and effortless glam, our lip and cheek tints are
+        designed to give you that natural, radiant glow—anytime, anywhere.
+      </p>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection">
+      <h2>Our Collection</h2>
+      <p>
+        From earthy mauves to deep berry tones, our collection is crafted to
+        suit every mood and skin tone. Stay tuned — new shades dropping soon. 💋
+        Blush Babe: Soft pinks and peachy tones for that dreamy, romantic glow.
+        Perfect for everyday wear and that “just blushed” look. 🔥 Bold &
+        Beautiful: Statement shades with rich pigments. Deep berries, fiery
+        reds, and intense corals for when you want to turn heads. 🌞 Sun-Kissed
+        Nudes: Warm, earthy tones that enhance your natural beauty. Think golden
+        hour in a tube.
+      </p>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+      <h2>Customer Love</h2>
+      <p>
+        ⭐️⭐️⭐️⭐️⭐️ "Absolutely obsessed with the texture and color payoff!
+        It gives me that mysterious glow without harming my skin." - A Happy
+        Customer<br />⭐️⭐️⭐️⭐️⭐️ “The perfect no-makeup makeup product!”
+        I’ve tried so many lip and cheek tints, but this one blends like butter
+        and gives me the softest flush. Obsessed! — Aanya S.
+        <br />⭐️⭐️⭐️⭐️⭐️ “A must-have in my daily routine.” I love how
+        lightweight it feels and how long it lasts. Plus, it smells amazing! —
+        Riya M.<br />
+        ⭐️⭐️⭐️⭐️⭐️ “So pigmented yet so natural.” One swipe gives me color
+        all day. The ‘Blush Babe’ shade is my fave! — Tanya K.<br />
+        ⭐️⭐️⭐️⭐️⭐️ “Finally, a tint that suits my skin tone!” Most tints
+        wash me out, but these shades are made for Indian skin. Love the
+        inclusivity.— Neha D.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Email us at hello@noirtints.com or DM us on Instagram @noirtints for
+        orders, collabs, and queries.
+      </p>
+    </section>
+
+    <script>
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        navbar.classList.toggle("scrolled", window.scrollY > 50);
+      });
+    </script>
+  </body>
+</html>
